@@ -1,0 +1,191 @@
+/*  Global styles */
+ body {
+	font-family: 'Helvetica Neue', Helvetica, system-ui;
+    background-image: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+ section {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+	background-color: rgba(237, 237, 237, 0.85);
+/* 	148, 148, 148, 0.91 */
+    margin: 0px;
+/*     display: block; */
+ }
+ 
+.sectionHeading {
+	font-size: 50px;
+}
+
+li {
+	list-style: none;	
+}
+
+
+/* Home & About styles */
+
+ #homeTitle {
+	 font-size: 72px;
+	 text-align: center;
+	 padding-top: 2em;
+ }
+
+ 
+#aboutDiv { 
+	background-color:rgba(183, 183, 183, 0.85);
+    border-radius: 5px;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 1em;
+}
+
+/* Degrees styles */
+
+#undergradDegreesContainer {
+  float: left;
+  margin-left: 20px;
+
+  width: 40%;
+}
+
+#gradDegreesContainer {
+  float: right;
+  margin-left: 20px;
+  margin-right: 40px;
+  width: 40%;
+}
+
+#minorsContent {
+	margin: 0 auto;	
+	width: 80%;
+}
+ 
+/* Faculty & Staff styles */
+
+ #facultyContent {
+	display: grid;
+	grid-template-columns: auto auto auto auto auto auto;
+ }
+ 
+.facultyImage {
+	border: 1px solid black;
+}
+
+.staffImage {
+	border: 1px solid black;
+}
+ 
+#staffContent {
+	display: grid;
+	grid-template-columns: auto auto auto auto ;
+	width: 70%;
+	margin-left: 15%;
+}
+
+/* Employment styles */
+
+#employmentStatisticsContent {
+	display: grid;
+	grid-template-columns: auto auto auto auto ;
+}
+
+.statsDiv {
+	background-color: rgba(255, 212, 163, 0.8);
+}
+#employmentAboutDiv {
+	background-color: rgba(255, 212, 163, 0.8);
+	margin-top: 20px;
+	padding: 15px;
+	border-radius: 10px;
+}
+
+#employmentAboutCareersContent {
+	float: left;
+	margin-left: 5px;
+	margin-right: 10px;
+	width: 30%;
+	background-color: rgba(255, 226, 193, 0.8);
+
+}
+
+#employmentAboutEmployersContent {
+	float: right;
+	margin-left: 10px;
+	margin-right: 5px;
+	width: 30%;
+	background-color: rgba(255, 226, 193, 0.8);
+
+}
+
+#coopTableContent {
+	width: 90%;
+	height: 80%;
+}
+
+#showCoopTable {
+	height: 60px;
+	width: 150px;
+	background-color: rgba(255, 226, 193, 0.8);
+}
+
+#coopTableMain {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255, 226, 193, 0.8);
+}
+
+#showEmploymentTable {
+	height: 60px;
+	width: 150px;
+	background-color: rgba(255, 226, 193, 0.8);
+}
+#employmentTableMain {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255, 226, 193, 0.8);
+}
+
+
+#researchContent-1 {
+	display: grid;
+	grid-template-columns: auto auto auto auto ;
+	font-size: 20px;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+#researchContent-2 {
+	display: grid;
+	grid-template-columns: auto auto auto auto ;
+	font-size: 20px;
+	font-weight: bold;
+	text-decoration: underline;
+
+}
+
+#footerQuickLinks {
+  float: left;
+  margin-left: 20px;
+
+  width: 35%;
+}
+
+#footerSocial {
+  float: right;
+  margin-left: 20px;
+  margin-right: 40px;
+  width: 35%;
+}
+
+
+
+ 
+
+
+

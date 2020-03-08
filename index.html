@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>Project2</title>
+  
+  <link rel="stylesheet" href="assets/css/style.css"/>
+  <link rel="stylesheet" href="assets/plugins/jquery-ui/jquery-ui.css"/>
+
+
+  <script src="https://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
+  
+
+	<!-- Methods from class -->
+	<script src="assets/scripts/340Lib.js"></script>
+	
+	<!-- Plugins -->
+	<script src="assets/plugins/Scrollify-master/jquery.scrollify.js"></script>
+	<script src="assets/plugins/jquery-ui/jquery-ui.min.js"></script>
+	<script src="assets/plugins/fancyTable/fancyTable.min.js"></script>
+	
+	<!-- Main Script -->
+	<script src="assets/scripts/script.js"></script>
+
+	<script type="text/javascript">
+		
+		$(document).ready(function(){
+			$(function() {
+				$.scrollify({
+					section:"section",
+					overflowScroll:true,
+					interstitialSection: footer
+				});
+				$.scrollify.update();
+			});
+				
+			loadSection("about");
+			loadSection("degrees");
+			loadSection("minors");
+			loadSection("faculty");
+			loadSection("staff");
+			loadSection("employment");
+			loadSection("research");
+			loadSection("resources");
+			loadSection("footer");
+
+			
+		});
+		
+		
+		$(document).ajaxStop(function(){
+			$.scrollify.update();
+		});
+/*
+		$(document).ajaxStop(function(){
+			
+			$(function(){
+				$("#undergradDegreesContent").accordion();
+			});
+			
+			$(function(){
+				$("#gradDegreesContent").accordion();
+			});
+			
+			$(function(){
+				$("#minorsContent").accordion({collapsible:true,active:'none'});
+			});
+			
+		});
+*/
+	</script>
+</head>
+<body>
+	<section id="home">
+		  <h1 id="homeTitle">IST - Information Sciences & Technology</h1>
+		  <div id="homeContent"></div>
+		  
+		  <h1 style='Font-Size: 32px;'>About</h1>
+		  <div id="aboutContent"></div>
+
+	</section>
+	
+	<section id="degrees">
+		<h1 class='sectionHeading'>Degrees</h1>
+		<div id="undergradDegreesContainer">
+			<h1 style='Font-Size: 36px;'>Undergraduate Degrees</h1>
+
+			<div id="undergradDegreesContent"></div>
+		</div>
+		<div id="gradDegreesContainer">
+			<h1 style='Font-Size: 36px;'>Graduate Degrees</h1>
+			<div id="gradDegreesContent"></div>
+		</div>
+	</section>
+	
+	<section id="minors">
+		<h1 class='sectionHeading'>Minors</h1>
+		<h3>The IST Department offers minors in many specialized areas of study.  Take a look at ours below.</h3>
+		<div id="minorsContent"></div>
+	</section>
+
+	<section id="faculty">
+		<h1 class='sectionHeading'>Faculty</h1>
+		<p>Click to get more info</p>
+		<div id="facultyContent"></div>
+	</section>
+	
+	<section id="staff">
+		<h1 class='sectionHeading'>Staff</h1>
+		<p>Click to get more info</p>
+		<div id="staffContent"></div>
+	</section>
+
+	
+	<section id="employment">
+		<h1 class='sectionHeading'>Employment</h1>
+		<div id="employmentContent">
+			<div id="employmentStatisticsContent">
+				
+			</div>
+			<div id="employmentAboutContent">
+				<div id="employmentAboutCareersContent"></div>
+				<div id="employmentAboutEmployersContent"></div>
+			</div>
+		<h1>Where our Students Co-op</h1>
+		<button id="showCoopTable">Show Coop Records (Table)</button>
+		<button id="showEmploymentTable">Show Employment Records (Table)</button>
+		<h1>View it on a map:</h1>
+
+		<div id="mapContent">
+			<iframe src='https://ist.rit.edu/api/map.php' height="500px" width="65%"></iframe>
+		</div>
+		<div id="coopTableContent"></div>
+
+		</div>
+	</section>
+		
+	<section id="research">
+		  <h1 class='sectionHeading'>Research</h1>
+		  <p>Click a name or interest area below to learn more</p>
+		  <div id="researchContent">
+			  <ul>
+			  	<li><a href="#researchContent-1">By Faculty Member</a></li>
+			  	<li><a href="#researchContent-2">By Interest Area</a></li>
+			  </ul>
+			  <div id="researchContent-1"></div>
+			  <div id="researchContent-2"></div>
+
+		  </div>
+	</section>
+	
+	<section id="contactUs">
+		  <h1 class='sectionHeading'>Contact Us</h1>
+		  <div id="contactUsForm">
+			  <iframe src='https://ist.rit.edu/api/contactForm.php' height="600px" width="90%"></iframe>
+		  </div>
+	</section>
+	
+	<section class="footer " id="footer">
+	  <div id="footerContent">
+	  </div>
+	</section>
+
+  
+</body>
+</html>
