@@ -1,4 +1,4 @@
-# REST API site
+# IST REST API Site
 This site pulls data from the IST Department REST API using XHR requests.
 
 Created to satisfy requirements for ISTE-340 Project 2.
